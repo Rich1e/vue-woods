@@ -28,16 +28,16 @@ Components List
 
 **JS Components**
 
-- [x] Toast
+- [✔︎] Toast
 - [x] Indicator
 - [x] Pull Down
 - [x] Pull Up
 - [x] Infinite Scroll
-- [x] Message Box
-- [x] Action Sheet
+- [✔︎] Dialog
+- [✔︎] Action Sheet
 - [x] Popup
 - [x] Swipe
-- [x] Lazy Load
+- [✔︎] Lazy Load
 - [x] Range
 - [x] Progress
 - [x] Picker
@@ -48,11 +48,12 @@ Components List
 
 ** CSS Components**
 
-- [x] Header
+- [✔︎] Header
 - [x] Tabbar
 - [x] Navbar
-- [x] Button
-- [x] Cell
+- [✔︎] Button
+- [✔︎] Group
+- [✔︎] Cell
 - [x] Cell Swipe
 - [x] Spinner
 - [x] Tab Container
