@@ -1,0 +1,48 @@
+.blank {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: $blankColor;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.ui-mask {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, .6);
+}
+
+.page {
+  margin-left: r(16);
+  margin-right: r(16);
+}
+
+#wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
