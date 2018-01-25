@@ -1,149 +1,154 @@
-import Demos from '../example/index.vue';
-import Cell from '../example/cell.vue';
-import Button from '../example/button.vue';
-import Action from '../example/action.vue';
-import Dialog from '../example/dialog.vue';
-import Header from '../example/header.vue';
-import Picker from '../example/picker.vue';
-import Navbar from '../example/navbar.vue';
-import Calendar from '../example/calendar.vue';
-import Tabbar from '../example/tabbar.vue';
-import Toast from '../example/toast.vue';
-import TabContainer from '../example/tab-container.vue';
-import Indicator from '../example/indicator.vue';
-import IndexList from '../example/index-list.vue';
-import Progress from '../example/progress.vue';
-import Swipe from '../example/swipe.vue';
-import PaletteButton from '../example/palette-button.vue';
-import Range from '../example/range.vue';
-import Switch from '../example/switch.vue';
-import Checklist from '../example/checklist.vue';
-import Radio from '../example/radio.vue';
-import Field from '../example/field.vue';
-import Badge from '../example/badge.vue';
-import Scroll from '../example/scroll.vue';
-import Popup from '../example/popup.vue';
-import Spinner from '../example/spinner.vue';
-import CellSwipe from '../example/cell-swipe.vue';
-import Search from '../example/search.vue';
-import LazyLoad from '../example/lazyload.vue';
+import Demos from '../example/index.vue'
+import Cell from '../example/cell.vue'
+import Button from '../example/button.vue'
+import Action from '../example/action.vue'
+import Dialog from '../example/dialog.vue'
+import Header from '../example/header.vue'
+import Picker from '../example/picker.vue'
+import Navbar from '../example/navbar.vue'
+import Calendar from '../example/calendar.vue'
+import Tabbar from '../example/tabbar.vue'
+import Toast from '../example/toast.vue'
+import TabContainer from '../example/tab-container.vue'
+import TabSwitch from '../example/tab-switch.vue'
+import Indicator from '../example/indicator.vue'
+import IndexList from '../example/index-list.vue'
+import Progress from '../example/progress.vue'
+import Swipe from '../example/swipe.vue'
+import PaletteButton from '../example/palette-button.vue'
+import Range from '../example/range.vue'
+import Switch from '../example/switch.vue'
+import Checklist from '../example/checklist.vue'
+import Radio from '../example/radio.vue'
+import Field from '../example/field.vue'
+import Badge from '../example/badge.vue'
+import Scroll from '../example/scroll.vue'
+import Popup from '../example/popup.vue'
+import Spinner from '../example/spinner.vue'
+import CellSwipe from '../example/cell-swipe.vue'
+import Search from '../example/search.vue'
+import LazyLoad from '../example/lazyload.vue'
 
 const routes = [{
-    path: '/',
-    name: 'demos',
-    component: Demos
+  path: '/',
+  name: 'demos',
+  component: Demos
 }, {
-    path: '/action',
-    name: 'action',
-    component: Action
+  path: '/action',
+  name: 'action',
+  component: Action
 }, {
-    path: '/cell',
-    name: 'cell',
-    component: Cell
+  path: '/cell',
+  name: 'cell',
+  component: Cell
 }, {
-    path: '/dialog',
-    name: 'dialog',
-    component: Dialog
+  path: '/dialog',
+  name: 'dialog',
+  component: Dialog
 }, {
-    path: '/button',
-    name: 'button',
-    component: Button
+  path: '/button',
+  name: 'button',
+  component: Button
 }, {
-    path: '/ui-header',
-    name: 'header',
-    component: Header
+  path: '/ui-header',
+  name: 'header',
+  component: Header
 }, {
-    path: '/picker',
-    name: 'picker',
-    component: Picker
+  path: '/picker',
+  name: 'picker',
+  component: Picker
 }, {
-    path: '/navbar',
-    name: 'navbar',
-    component: Navbar
+  path: '/navbar',
+  name: 'navbar',
+  component: Navbar
 }, {
-    path: '/tabbar',
-    name: 'tabbar',
-    component: Tabbar
+  path: '/tabbar',
+  name: 'tabbar',
+  component: Tabbar
 }, {
-    path: '/tabcontainer',
-    name: 'tabcontainer',
-    component: TabContainer
+  path: '/tabcontainer',
+  name: 'tabcontainer',
+  component: TabContainer
 }, {
-    path: '/toast',
-    name: 'toast',
-    component: Toast
+  path: '/tabswitch',
+  name: 'tabswitch',
+  component: TabSwitch
 }, {
-    path: '/indicator',
-    name: 'indicator',
-    component: Indicator
+  path: '/toast',
+  name: 'toast',
+  component: Toast
 }, {
-    path: '/calendar',
-    name: 'calendar',
-    component: Calendar
+  path: '/indicator',
+  name: 'indicator',
+  component: Indicator
 }, {
-    path: '/indexlist',
-    name: 'indexlist',
-    component: IndexList
+  path: '/calendar',
+  name: 'calendar',
+  component: Calendar
 }, {
-    path: '/progress',
-    name: 'progress',
-    component: Progress
+  path: '/indexlist',
+  name: 'indexlist',
+  component: IndexList
 }, {
-    path: '/swipe',
-    name: 'swipe',
-    component: Swipe
+  path: '/progress',
+  name: 'progress',
+  component: Progress
 }, {
-    path: '/range',
-    name: 'range',
-    component: Range
+  path: '/swipe',
+  name: 'swipe',
+  component: Swipe
 }, {
-    path: '/palettebutton',
-    name: 'palettebutton',
-    component: PaletteButton
+  path: '/range',
+  name: 'range',
+  component: Range
 }, {
-    path: '/switch',
-    name: 'switch',
-    component: Switch
+  path: '/palettebutton',
+  name: 'palettebutton',
+  component: PaletteButton
 }, {
-    path: '/checklist',
-    name: 'checklist',
-    component: Checklist
+  path: '/switch',
+  name: 'switch',
+  component: Switch
 }, {
-    path: '/radio',
-    name: 'radio',
-    component: Radio
+  path: '/checklist',
+  name: 'checklist',
+  component: Checklist
 }, {
-    path: '/field',
-    name: 'field',
-    component: Field
+  path: '/radio',
+  name: 'radio',
+  component: Radio
 }, {
-    path: '/badge',
-    name: 'badge',
-    component: Badge
+  path: '/field',
+  name: 'field',
+  component: Field
 }, {
-    path: '/scroll',
-    name: 'scroll',
-    component: Scroll
+  path: '/badge',
+  name: 'badge',
+  component: Badge
 }, {
-    path: '/popup',
-    name: 'popup',
-    component: Popup
+  path: '/scroll',
+  name: 'scroll',
+  component: Scroll
 }, {
-    path: '/spinner',
-    name: 'spinner',
-    component: Spinner
+  path: '/popup',
+  name: 'popup',
+  component: Popup
 }, {
-    path: '/cellswipe',
-    name: 'cellswipe',
-    component: CellSwipe
+  path: '/spinner',
+  name: 'spinner',
+  component: Spinner
 }, {
-    path: '/search',
-    name: 'search',
-    component: Search
+  path: '/cellswipe',
+  name: 'cellswipe',
+  component: CellSwipe
 }, {
-    path: '/lazyload',
-    name: 'lazyload',
-    component: LazyLoad
-}];
+  path: '/search',
+  name: 'search',
+  component: Search
+}, {
+  path: '/lazyload',
+  name: 'lazyload',
+  component: LazyLoad
+}]
 
-export default routes;
+export default routes

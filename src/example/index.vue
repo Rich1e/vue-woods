@@ -35,6 +35,9 @@
       <cell title="Field" link="field"></cell>
       <cell title="Badge" link="badge"></cell>
     </group>
+    <group title="Advanced Components" type="hint">
+      <cell title="Tab Switch" link="tabSwitch"></cell>
+    </group>
   </div>
 </template>
 <style lang="scss">
