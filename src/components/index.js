@@ -7,7 +7,8 @@ import Group from './group/index.vue'
 import UiHeader from './ui-header/index.vue'
 import Toast from './toast/index.vue'
 import LazyLoad from './lazy-load/index'
-import TabSwitch from './tab-switch/index.vue'
+import Tabs from './tab-switch/index.vue'
+import TabPanel from './tab-switch/tab.vue'
 
 export {
   Action,
@@ -19,5 +20,6 @@ export {
   UiHeader,
   Toast,
   LazyLoad,
-  TabSwitch
+  Tabs,
+  TabPanel
 }

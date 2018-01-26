@@ -1,150 +1,69 @@
 <template>
-  <div id="app">
-    <tab-switch :tabtitles="tabtitles" :currPage="1">
-      <div class="tab-content-container">
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-        <div>tab-switch 1</div>
-      </div>
-      <div class="tab-content-container">
-        <div>tab-switch 2</div>
-        <div>tab-switch 2</div>
-        <div>tab-switch 2</div>
-        <div>tab-switch 2</div>
-        <div>tab-switch 2</div>
-        <div>tab-switch 2</div>
-        <div>tab-switch 2</div>
-        <div>tab-switch 2</div>
-        <div>tab-switch 2</div>
-      </div>
-      <div class="tab-content-container">
-        <div>tab-switch 3</div>
-        <div>tab-switch 3</div>
-        <div>tab-switch 3</div>
-        <div>tab-switch 3</div>
-        <div>tab-switch 3</div>
-        <div>tab-switch 3</div>
-        <div>tab-switch 3</div>
-        <div>tab-switch 3</div>
-        <div>tab-switch 3</div>
-      </div>
-      <div class="tab-content-container">
-        <div>tab-switch 4</div>
-        <div>tab-switch 4</div>
-        <div>tab-switch 4</div>
-        <div>tab-switch 4</div>
-        <div>tab-switch 4</div>
-        <div>tab-switch 4</div>
-        <div>tab-switch 4</div>
-        <div>tab-switch 4</div>
-        <div>tab-switch 4</div>
-      </div>
-    </tab-switch>
+  <div class="app">
+    <Tabs indexTab="friend" @changePage="getPageNum">
+      <TabPanel label="好友榜" hash="friend">
+        <div class="first"></div>
+      </TabPanel>
+      <TabPanel label="全省榜" hash="convince">
+        <div class="second"></div>
+      </TabPanel>
+      <TabPanel label="全国榜" hash="country">
+        <div class="three"></div>
+      </TabPanel>
+    </Tabs>
+    <h3>{{pageNum}}</h3>
   </div>
 </template>
+
 <script>
-  import {
-    TabSwitch
-  } from '../components/index.js'
+
+  import { Tabs, TabPanel } from '../components/index.js'
 
   export default {
-    components: {
-      TabSwitch
+    created () {
+
+    },
+    mounted () {
+
     },
     data () {
       return {
-        'tabtitles': ['bajian', 'github', 'bajian', 'github']
+        pageNum: 0
       }
+    },
+    methods: {
+      getPageNum (idx) {
+        console.log('##########' + idx)
+        this.pageNum = idx
+      }
+    },
+    components: {
+      Tabs,
+      TabPanel
     }
   }
 </script>
-<style>
-  html {
-    height: 100%;
+
+<style lang="scss">
+  $font_size: 75;
+
+  @function rem($pixels) {
+    @return $pixels / $font_size + rem;
   }
 
-  * {
-    margin: 0px;
-    padding: 0px;
+  .first {
+    height: 5800px;
+    background: yellow;
   }
 
-  .tab-content-container {
-    width: 99%;
-    height: 200px;
-    margin: 0px auto;
+  .second {
+    height: 9500px;
+    background: red;
   }
 
-  #app {
-    color: #2c3e50;
-    max-width: 500px;
-    width: 100%;
-    font-family: Source Sans Pro, Helvetica, sans-serif;
-    margin: 0 auto
-  }
-
-  img {
-    width: 98%
+  .three {
+    height: 800px;
+    background: blue;
   }
 
 </style>
